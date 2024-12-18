@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kviz: HTML, CSS i JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>KVIZ: HTML, CSS i JavaScript</h1>
+    <form id="quizForm">
+        <div class="question">
+            <p>1. Što označava HTML?</p>
+            <input type="radio" name="q1" value="a"> Hyper Text Markup Language<br>
+            <input type="radio" name="q1" value="b"> High Text Machine Language<br>
+            <input type="radio" name="q1" value="c"> Hyper Tool Markup Language
+        </div>
+
+        <div class="question">
+            <p>2. Koji tag se koristi za najveći naslov u HTML-u?</p>
+            <input type="radio" name="q2" value="a"> &lt;h6&gt;<br>
+            <input type="radio" name="q2" value="b"> &lt;h1&gt;<br>
+            <input type="radio" name="q2" value="c"> &lt;head&gt;
+        </div>
+
+        <div class="question">
+            <p>3. Koja se CSS svojstva koriste za promjenu boje teksta?</p>
+            <input type="radio" name="q3" value="a"> background-color<br>
+            <input type="radio" name="q3" value="b"> font-color<br>
+            <input type="radio" name="q3" value="c"> color
+        </div>
+
+        <div class="question">
+            <p>4. Kako uključiti vanjsku CSS datoteku?</p>
+            <input type="checkbox" name="q4" value="a"> Korištenjem taga &lt;link&gt;<br>
+            <input type="checkbox" name="q4" value="b"> Korištenjem taga &lt;style&gt;<br>
+            <input type="checkbox" name="q4" value="c"> Importiranjem u JavaScriptu
+        </div>
+
+        <div class="question">
+            <p>5. Što označava CSS?</p>
+            <input type="radio" name="q5" value="a"> Computer Style Sheets<br>
+            <input type="radio" name="q5" value="b"> Cascading Style Sheets<br>
+            <input type="radio" name="q5" value="c"> Creative Style Sheets
+        </div>
+
+        <div class="question">
+            <p>6. Koji od sljedećih je JavaScript tip podatka?</p>
+            <input type="checkbox" name="q6" value="a"> String<br>
+            <input type="checkbox" name="q6" value="b"> Boolean<br>
+            <input type="checkbox" name="q6" value="c"> Paragraph
+        </div>
+
+        <div class="question">
+            <p>7. Kako deklarirati varijablu u JavaScriptu?</p>
+            <input type="radio" name="q7" value="a"> var<br>
+            <input type="radio" name="q7" value="b"> variable<br>
+            <input type="radio" name="q7" value="c"> declare
+        </div>
+
+        <div class="question">
+            <p>8. Koja je ispravna sintaksa za JavaScript funkciju?</p>
+            <input type="radio" name="q8" value="a"> function myFunction() {}<br>
+            <input type="radio" name="q8" value="b"> function:myFunction() {}<br>
+            <input type="radio" name="q8" value="c"> function = myFunction() {}
+        </div>
+
+        <div class="question">
+            <p>9. Koji događaj se događa kada korisnik klikne na HTML element?</p>
+            <input type="radio" name="q9" value="a"> onclick<br>
+            <input type="radio" name="q9" value="b"> onmouseover<br>
+            <input type="radio" name="q9" value="c"> onhover
+        </div>
+
+        <div class="question">
+            <p>10. Što se koristi za debuggiranje JavaScript koda?</p>
+            <input type="radio" name="q10" value="a"> Konzola<br>
+            <input type="radio" name="q10" value="b"> Alert box<br>
+            <input type="radio" name="q10" value="c"> Debug datoteka
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Pošalji</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
