@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS polja</title>
+</head>
+<body>
+     
+    <h1>JavaScript polja</h1>
+
+<p id = "demo"></p>
+
+    <script>
+
+        let auti = new Array( "Porsche" , "BMW" , "Ferrari");
+        
+        document.write(auti[0]);
+        document.write(auti[1]);
+        document.write(auti[2]);
+
+        document.write("<br> <br>");
+
+        const fruits = ["Banana" , "Jabuka" , "Kiwi"];
+        document.write(fruits.length);
+
+        document.write(fruits.join("  "));
+
+        document.write("<br> <br>");
+
+        const food = ["Palacinke" , "Tortilje" , "Vafli" , "Pizza"];
+
+        document.write(food);
+
+        document.write("<br> <br>");
+
+        food.sort();
+        document.write(food);
+
+        document.write("<br><br>");
+
+        food.reverse();
+        document.write(food);
+
+        document.write("<br><br>");
+        
+        const numbers = [44, 22, 17, 67, 9];
+
+        let txt = "";
+        numbers.forEach(myFunction);
+        document.write(txt);
+
+        function myFunction(value, index, array) {
+            txt += value + "<br>";
+        }
+        
+
+    </script>
+
+
+
+</body>
+</html>
