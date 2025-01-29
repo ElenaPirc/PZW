@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vježba - objekti</title>
+</head>
+<body>
+    <h1>JavaScript objekti</h1>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <h1>Osoba zvana:</h1>
+    
+    <p id="person"></p>
+
+    <script>
+
+        // KREIRANJE OBJEKTA:
+        const car = {type: "Ferrari", model: "500", color:"red"};
+
+        //ISPIŠI SVOJSTVO OBJEKTA CAR:
+        document.getElementById("demo").innerHTML = "Marka automobila je: " + car.type;
+
+        document.getElementById("demo1").innerHTML = "Model automobila je: " + car.model;
+
+        document.getElementById("demo2").innerHTML = "Boja automobila je: " + car.color;
+
+        const person = {
+            firstName: "John", 
+            lastName: "Doe", 
+            id: 44556, 
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        document.getElementById("person").innerHTML = person.fullName();
+
+
+    </script>
+    
+</body>
+</html>
